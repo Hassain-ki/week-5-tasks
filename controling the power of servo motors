@@ -32,31 +32,83 @@ void loop()
   digitalWrite(LED_BUILTIN, HIGH);
   digitalWrite(8, HIGH);
   servo_10.write(60);
-  delay(500); // Wait for 500 millisecond(s)
+  delay(1000); // Wait for 1000 millisecond(s)
   digitalWrite(8, LOW);
   digitalWrite(7, HIGH);
   servo_6.write(60);
-  delay(500); // Wait for 500 millisecond(s)
+  delay(1000); // Wait for 1000 millisecond(s)
   digitalWrite(7, LOW);
   digitalWrite(4, HIGH);
   servo_9.write(60);
-  delay(500); // Wait for 500 millisecond(s)
+  delay(1000); // Wait for 1000 millisecond(s)
   digitalWrite(4, LOW);
   digitalWrite(3, HIGH);
   servo_5.write(60);
-  delay(500); // Wait for 500 millisecond(s)
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(3, LOW);
+  digitalWrite(2, HIGH);
+  servo_11.write(60);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(2, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(8, HIGH);
+  servo_10.write(170);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(8, LOW);
+  digitalWrite(7, HIGH);
+  servo_6.write(170);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(7, LOW);
+  digitalWrite(4, HIGH);
+  servo_9.write(170);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(4, LOW);
+  digitalWrite(3, HIGH);
+  servo_5.write(170);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(3, LOW);
+  digitalWrite(2, HIGH);
+  servo_11.write(170);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(2, LOW);
+  delay(1500); // Wait for 1500 millisecond(s)
+  digitalWrite(8, HIGH);
+  servo_10.write(0);
+  delay(1500); // Wait for 1500 millisecond(s)
+  digitalWrite(8, LOW);
+  digitalWrite(7, HIGH);
+  servo_6.write(0);
+  delay(1500); // Wait for 1500 millisecond(s)
+  digitalWrite(7, LOW);
+  digitalWrite(4, HIGH);
+  servo_9.write(0);
+  delay(1500); // Wait for 1500 millisecond(s)
+  digitalWrite(4, LOW);
+  digitalWrite(3, HIGH);
+  servo_5.write(0);
+  delay(1500); // Wait for 1500 millisecond(s)
   digitalWrite(3, LOW);
   digitalWrite(2, HIGH);
   servo_11.write(0);
-  delay(500); // Wait for 500 millisecond(s)
+  delay(1500); // Wait for 1500 millisecond(s)
   digitalWrite(2, LOW);
   delay(1000); // Wait for 1000 millisecond(s)
   digitalWrite(LED_BUILTIN, LOW);
   digitalWrite(8, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(3, LOW);
+  digitalWrite(2, LOW);
   servo_10.write(40);
+  servo_11.write(45);
+  servo_9.write(50);
+  servo_6.write(55);
+  servo_5.write(60);
   delay(5000); // Wait for 5000 millisecond(s)
   servo_10.write(120);
-  delay(5000); // Wait for 5000 millisecond(s)
-  servo_10.write(0);
+  servo_11.write(125);
+  servo_9.write(130);
+  servo_6.write(135);
+  servo_5.write(140);
   delay(5000); // Wait for 5000 millisecond(s)
 }
