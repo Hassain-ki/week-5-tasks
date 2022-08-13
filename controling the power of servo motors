@@ -1,0 +1,62 @@
+// C++ code
+//
+#include <Servo.h>
+
+Servo servo_10;
+
+Servo servo_6;
+
+Servo servo_9;
+
+Servo servo_5;
+
+Servo servo_11;
+
+void setup()
+{
+  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(8, OUTPUT);
+  servo_10.attach(10, 500, 2500);
+  pinMode(7, OUTPUT);
+  servo_6.attach(6, 500, 2500);
+  pinMode(4, OUTPUT);
+  servo_9.attach(9, 500, 2500);
+  pinMode(3, OUTPUT);
+  servo_5.attach(5, 500, 2500);
+  pinMode(2, OUTPUT);
+  servo_11.attach(11, 500, 2500);
+}
+
+void loop()
+{
+  digitalWrite(LED_BUILTIN, HIGH);
+  digitalWrite(8, HIGH);
+  servo_10.write(60);
+  delay(500); // Wait for 500 millisecond(s)
+  digitalWrite(8, LOW);
+  digitalWrite(7, HIGH);
+  servo_6.write(60);
+  delay(500); // Wait for 500 millisecond(s)
+  digitalWrite(7, LOW);
+  digitalWrite(4, HIGH);
+  servo_9.write(60);
+  delay(500); // Wait for 500 millisecond(s)
+  digitalWrite(4, LOW);
+  digitalWrite(3, HIGH);
+  servo_5.write(60);
+  delay(500); // Wait for 500 millisecond(s)
+  digitalWrite(3, LOW);
+  digitalWrite(2, HIGH);
+  servo_11.write(0);
+  delay(500); // Wait for 500 millisecond(s)
+  digitalWrite(2, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(LED_BUILTIN, LOW);
+  digitalWrite(8, LOW);
+  servo_10.write(40);
+  delay(5000); // Wait for 5000 millisecond(s)
+  servo_10.write(120);
+  delay(5000); // Wait for 5000 millisecond(s)
+  servo_10.write(0);
+  delay(5000); // Wait for 5000 millisecond(s)
+}
